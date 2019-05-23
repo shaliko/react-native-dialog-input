@@ -39,7 +39,7 @@ class DialogInput extends React.Component{
           <TouchableOpacity style={styles.container} activeOpacity={1} onPress={() => { this.props.closeDialog(); this.setState({ inputModal: '',openning: true })}} >
             <View style={[styles.modal_container, {...dialogStyleProps}]} >
               <View style={styles.modal_body} >
-                <Text style={styles.title_modal}>{title}</Text>
+                <Text style={[styles.title_modal, {color: 'black'}]}>{title}</Text>
                 <Text style={[this.props.message ? styles.message_modal : {height:0} ]}>{this.props.message}</Text>
                 <TextInput style={styles.input_container}
                   autoCorrect={(textProps && textProps.autoCorrect==false)?false:true}
