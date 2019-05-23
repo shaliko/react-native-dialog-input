@@ -40,7 +40,7 @@ class DialogInput extends React.Component{
             <View style={[styles.modal_container, {...dialogStyleProps}]} >
               <View style={styles.modal_body} >
                 <Text style={[styles.title_modal, {color: 'black'}]}>{title}</Text>
-                <Text style={[this.props.message ? styles.message_modal : {height:0} ]}>{this.props.message}</Text>
+                <Text style={[this.props.message ? styles.message_modal : {height:0}, {color: 'black'} ]}>{this.props.message}</Text>
                 <TextInput style={styles.input_container}
                   autoCorrect={(textProps && textProps.autoCorrect==false)?false:true}
                   autoCapitalize={(textProps && textProps.autoCapitalize)?textProps.autoCapitalize:'none'}
